@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","21494","Login with registered user","chromium","Wed Feb 26 16:23:08 IST 2025","passed","Wed Feb 26 16:23:30 IST 2025","","TestLoginPage.spec.js","",""
+"","21815","Login with registered user","firefox","Wed Feb 26 16:23:08 IST 2025","passed","Wed Feb 26 16:23:30 IST 2025","","TestLoginPage.spec.js","",""
+"","30046","dashboard test","firefox","Wed Feb 26 16:29:31 IST 2025","broken","Wed Feb 26 16:30:01 IST 2025","","TestDashBoardPage.spec.js","",""
+"","22178","dashboard test","webkit","Wed Feb 26 16:29:59 IST 2025","passed","Wed Feb 26 16:30:21 IST 2025","","TestDashBoardPage.spec.js","",""
+"","22318","Login with registered user","webkit","Wed Feb 26 16:23:33 IST 2025","passed","Wed Feb 26 16:23:55 IST 2025","","TestLoginPage.spec.js","",""
+"","25010","dashboard test","chromium","Wed Feb 26 16:29:31 IST 2025","passed","Wed Feb 26 16:29:56 IST 2025","","TestDashBoardPage.spec.js","",""

@@ -1,8 +1,12 @@
 export class LoginPage {
     constructor(page) {
         this.page = page;
-        this.emailLink = "#container"; // Update the selector based on the actual button
-        this.frameLocator = "div#root iframe"; // Corrected to CSS selector
+        this.emailLink = "id=container"; 
+        this.frameLocator = "//div[@id='root']//child::iframe"; 
+        this.registeredEmail = "(//div[@class='space-y-2'])[1]//input";
+        this.password = "//input[@type='password']";
+        this.clickLogin = "//button[text()='Log in']";
+     
     }
 
     async loginPage() {
@@ -19,4 +23,18 @@ export class LoginPage {
             .locator(this.emailLink)
             .click();
     }
+
+    async enterEmail(email){
+        await this.page.fill(this.registeredEmail,email);
+    }
+
+    async enterPassword(password){
+await this.page.fill(this.password,password);
+    }
+
+    async clickLogInButton(){
+        await this.page.click(this.clickLogin);
+    }
+
+    
 }

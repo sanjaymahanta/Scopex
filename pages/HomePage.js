@@ -2,18 +2,18 @@ export class HomePage{
 
 constructor(page) {
     this.page = page;
-    this.loginLink = "//div[@class='hidden lg:flex']/a";
-    this.userEmailLink = "//div[text()='sanjaykmahanta28@gmail.com']";
+    this.loginLink = "//a[text()='Login']";
+   
 }
 
 async gotoHomePage(){
-    await this.page.goto('https://scopex.money/');
+    await this.page.goto("https://scopex.money/");
 }
 
-async validate(){
+async clickLogin(){
 
 
-    await this.page.locator(this.loginLink).click();
+    await this.page.click(this.loginLink);
   
 }
 }
